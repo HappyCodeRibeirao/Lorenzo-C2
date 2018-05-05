@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3f7udjb2nseb4</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1708</width>
+        <height>960</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type global="1" name="Haroldo" sid="337719869013075">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="327051077341913">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Andando" pingpong="0" repeatcount="1" repeatto="0" sid="218652576653876" speed="5">
+                    <frame duration="1" hotspotX="0.985294" hotspotY="0.698925" original-source="C:\Program Files\Construct 2\Kenny Assets\moreenemiesanimations\Alien sprites\alienGreen_walk1.png">
+                        <collision-poly>
+                            <point x="0.151515" y="0.108696" />
+                            <point x="0.5" y="0.0108696" />
+                            <point x="0.848485" y="0.108696" />
+                            <point x="0.939394" y="0.5" />
+                            <point x="0.772727" y="0.836957" />
+                            <point x="0.5" y="1" />
+                            <point x="0.212121" y="0.847826" />
+                            <point x="0.0454545" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1.02857" hotspotY="0.6875" original-source="C:\Program Files\Construct 2\Kenny Assets\moreenemiesanimations\Alien sprites\alienGreen_walk2.png">
+                        <collision-poly>
+                            <point x="0.151515" y="0.108696" />
+                            <point x="0.5" y="0.0108696" />
+                            <point x="0.848485" y="0.108696" />
+                            <point x="0.939394" y="0.5" />
+                            <point x="0.772727" y="0.836957" />
+                            <point x="0.5" y="1" />
+                            <point x="0.212121" y="0.847826" />
+                            <point x="0.0454545" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="1" name="Parado" pingpong="0" repeatcount="1" repeatto="0" sid="842490397586674" speed="5">
+                    <frame duration="1" hotspotX="1.0303" hotspotY="0.684783">
+                        <collision-poly>
+                            <point x="0.151515" y="0.108696" />
+                            <point x="0.5" y="0.0108696" />
+                            <point x="0.848485" y="0.108696" />
+                            <point x="0.939394" y="0.5" />
+                            <point x="0.772727" y="0.836957" />
+                            <point x="0.5" y="1" />
+                            <point x="0.212121" y="0.847826" />
+                            <point x="0.0454545" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="1" name="pulando" pingpong="0" repeatcount="1" repeatto="0" sid="361169844246965" speed="5">
+                    <frame duration="1" hotspotX="1.02985" hotspotY="0.688172" original-source="C:\Program Files\Construct 2\Kenny Assets\moreenemiesanimations\Alien sprites\alienGreen_jump.png">
+                        <collision-poly>
+                            <point x="0.134328" y="0.0967742" />
+                            <point x="0.492537" y="0" />
+                            <point x="0.850746" y="0.107527" />
+                            <point x="0.925373" y="0.494624" />
+                            <point x="0.716418" y="0.817205" />
+                            <point x="0.477612" y="1" />
+                            <point x="0.223881" y="0.83871" />
+                            <point x="0.0447761" y="0.494624" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="141664721796603">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="283123655663993" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="solinho" sid="560350782285015">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="322570158326862">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="885771402112174" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Program Files\Construct 2\Kenny Assets\physicspack\PNG\Backgrounds\colored_land.png">
+                        <collision-poly>
+                            <point x="0" y="0.614258" />
+                            <point x="0.132813" y="0.598145" />
+                            <point x="0.242188" y="0.589844" />
+                            <point x="0.423828" y="0.639648" />
+                            <point x="0.512695" y="0.656738" />
+                            <point x="0.601563" y="0.677734" />
+                            <point x="1" y="0.613281" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BubleGun" sid="585524760460157">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="207365444636929">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="474877502234509" speed="5">
+                    <frame duration="1" hotspotX="0.4" hotspotY="0.628571" original-source="C:\Program Files\Construct 2\Kenny Assets\platformergraphics-requestpack\Tiles\raygunPurpleBig.png">
+                        <image-point name="pontaArma" x="0.757143" y="0.485714" />
+                        <collision-poly>
+                            <point x="0.385714" y="0.385714" />
+                            <point x="0.5" y="0.4" />
+                            <point x="0.742857" y="0.5" />
+                            <point x="0.557143" y="0.557143" />
+                            <point x="0.5" y="0.557143" />
+                            <point x="0.328571" y="0.671429" />
+                            <point x="0.328571" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="836456045270063">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Sprite" sid="697532245753484">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="196276923555261">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="626268152594678" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Program Files\Construct 2\Kenny Assets\kenney_platformerpack_industrial\PNG\Default size\platformIndustrial_044.png">
+                        <collision-poly>
+                            <point x="0.0714286" y="0.0714286" />
+                            <point x="0.5" y="0" />
+                            <point x="0.928571" y="0.0714286" />
+                            <point x="1" y="0.5" />
+                            <point x="0.928571" y="0.928571" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0714286" y="0.928571" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="426806993190922">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="274858997084515" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500971" original-source="C:\Program Files\Construct 2\Kenny Assets\kenney-backgroundelements\Sample.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="195771419825791">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="748615647326126">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="725369281067150" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Program Files\Construct 2\Kenny Assets\kenney-backgroundelements\PNG\tree06.png">
+                        <collision-poly>
+                            <point x="0.140625" y="0.121739" />
+                            <point x="0.515625" y="0" />
+                            <point x="0.953125" y="0.126087" />
+                            <point x="0.914063" y="0.504348" />
+                            <point x="0.726563" y="0.847826" />
+                            <point x="0.5" y="0.995652" />
+                            <point x="0.273438" y="0.847826" />
+                            <point x="0.09375" y="0.495652" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="541870278044417">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="477978851521774">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="944188374544367" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504762" original-source="C:\Program Files\Construct 2\Kenny Assets\kenney-backgroundelements\PNG\tree08.png">
+                        <collision-poly>
+                            <point x="0.479167" y="0.0380953" />
+                            <point x="0.979166" y="0.780953" />
+                            <point x="0.4375" y="1" />
+                            <point x="0" y="0.771428" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mosca" sid="220500705748660">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="369149366653485">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="567177739027939" speed="5">
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.511111" original-source="C:\Program Files\Construct 2\Kenny Assets\moreenemiesanimations\Enemy sprites\fly.png">
+                        <collision-poly>
+                            <point x="0.0701754" y="0.0888889" />
+                            <point x="0.491228" y="0.333333" />
+                            <point x="0.912281" y="0.111111" />
+                            <point x="0.877193" y="0.488889" />
+                            <point x="0.877193" y="0.844444" />
+                            <point x="0.491228" y="0.933333" />
+                            <point x="0.192982" y="0.755556" />
+                            <point x="0.192982" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="casteloDaPamonha" sid="434629875917762">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="101014121075937" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Program Files\Construct 2\Kenny Assets\kenney-backgroundelements\PNG\castle_beige.png">
+                        <collision-poly>
+                            <point x="0.480392" y="0.763737" />
+                            <point x="0.558824" y="0.758242" />
+                            <point x="0.558824" y="1" />
+                            <point x="0.485294" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="balinha" sid="704712774899818">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="352080543262412">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="949163599068013" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\Logo20Fini.png">
+                        <collision-poly>
+                            <point x="0.115665" y="0.213445" />
+                            <point x="0.295082" y="0.0743698" />
+                            <point x="0.5" y="0.0361345" />
+                            <point x="0.569216" y="0" />
+                            <point x="0.625185" y="0.0299107" />
+                            <point x="0.646545" y="0.016124" />
+                            <point x="0.687443" y="0" />
+                            <point x="0.767418" y="0.0947479" />
+                            <point x="0.896402" y="0.179412" />
+                            <point x="0.890312" y="0.216702" />
+                            <point x="0.984404" y="0.398529" />
+                            <point x="1" y="0.614286" />
+                            <point x="0.84153" y="0.905882" />
+                            <point x="0.806239" y="0.922689" />
+                            <point x="0.727231" y="0.936134" />
+                            <point x="0.5" y="1" />
+                            <point x="0.229508" y="0.932773" />
+                            <point x="0.0866348" y="0.790966" />
+                            <point x="0.0220856" y="0.67605" />
+                            <point x="0.000455373" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="638731636840210">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="257478510382061" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="756140818340628">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="199098303257591" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kenny Assets\physicspack\PNG\Backgrounds\blue_grass.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="507234887899360">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="807702062843312">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="411194444046166" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kenny Assets\physicspack\PNG\Backgrounds\colored_land.png">
+                        <collision-poly>
+                            <point x="0.0078125" y="0.601563" />
+                            <point x="0.268555" y="0.609375" />
+                            <point x="0.513672" y="0.648438" />
+                            <point x="0.65332" y="0.658203" />
+                            <point x="0.896973" y="0.629883" />
+                            <point x="1" y="0.613281" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="476932611650899">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="498270731798655" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kenny Assets\kenney_platformerpack_industrial\PNG\Default size\platformIndustrial_039.png">
+                        <collision-poly>
+                            <point x="0.442857" y="0.442857" />
+                            <point x="0.5" y="0.428571" />
+                            <point x="0.557143" y="0.442857" />
+                            <point x="0.671429" y="0.5" />
+                            <point x="0.714286" y="0.714286" />
+                            <point x="0.5" y="0.871428" />
+                            <point x="0.285714" y="0.714286" />
+                            <point x="0.328571" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="3" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

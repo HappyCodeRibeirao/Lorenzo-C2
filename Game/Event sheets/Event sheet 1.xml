@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-group description="" sid="666586837448312" title="mosca">
+            <sub-events>
+                <event-block sid="427015502972119">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="704781742394267" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="560766713704113" type="mosca">
+                            <param id="0" name="Angle">angle(mosca.X, mosca.Y, haroldo.X, haroldo.Y)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="874843763553958">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="999515687869035" type="System">
+                            <param id="0" name="First value">mosca.X</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">haroldo.X</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="305772391635655" type="mosca">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="582339375679946">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="500643010812052" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="368462912380486" type="mosca">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="549041393978562" title="Haroldo">
+            <sub-events>
+                <event-block sid="191655630980421">
+                    <conditions>
+                        <condition id="0" name="On click" sid="879768813180658" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="983297641801302" type="BubleGun">
+                            <param id="0" name="Object">balinha</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="397249915360736">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="764229620454369" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="836252544019112" type="BubleGun">
+                            <param id="0" name="Pin to">Haroldo</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="569799549508973">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Is mirrored" sid="458708539627624" type="Haroldo" />
+                        <condition id="-21" name="Is between values" sid="873914920179710" type="System">
+                            <param id="0" name="Value">angle(BubleGun.X, BubleGun.Y, Mouse.X, Mouse.Y)</param>
+                            <param id="1" name="Lower bound">-90</param>
+                            <param id="2" name="Upper bound">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-22" name="Set angle toward position" sid="738520812163021" type="BubleGun">
+                            <param id="0" name="X">Mouse.X</param>
+                            <param id="1" name="Y">Mouse.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="557612424135433">
+                    <conditions>
+                        <condition id="7" name="Is mirrored" sid="299510907616084" type="Haroldo" />
+                        <condition id="-21" inverted="1" name="Is between values" sid="554229550625647" type="System">
+                            <param id="0" name="Value">angle(BubleGun.X, BubleGun.Y, Mouse.X, Mouse.Y)</param>
+                            <param id="1" name="Lower bound">-90</param>
+                            <param id="2" name="Upper bound">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-22" name="Set angle toward position" sid="726916998351005" type="BubleGun">
+                            <param id="0" name="X">Mouse.X</param>
+                            <param id="1" name="Y">Mouse.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="499662508465668">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="561628769515875" type="System">
+                            <param id="0" name="First value">Haroldo.Platform.VectorX</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="409444069051017" type="Haroldo">
+                            <param id="0" name="Animation">&quot;Andando&quot;</param>
+                            <param id="1" name="From">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="509211340558436">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="758784617619180" type="System">
+                                    <param id="0" name="First value">Haroldo.Platform.VectorX</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="610518636536464" type="Haroldo">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="8" name="Set flipped" sid="798470170866932" type="BubleGun">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="547141857722521">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="202253305517248" type="System">
+                                    <param id="0" name="First value">Haroldo.Platform.VectorX</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="601030371461110" type="Haroldo">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="8" name="Set flipped" sid="895911526074590" type="BubleGun">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="657301856563626">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="769993528829467" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="268686970245022" type="Haroldo">
+                            <param id="0" name="Animation">&quot;Parado&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="280209123168606">
+                    <conditions>
+                        <condition behavior="Platform" id="3" name="Is jumping" sid="157478256286538" type="Haroldo" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="936690777170302" type="Haroldo">
+                            <param id="0" name="Animation">&quot;Pulando&quot;</param>
+                            <param id="1" name="From">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="699249971483922">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="257015220382447" type="Haroldo">
+                    <param id="0" name="Object">casteloDaPamonha</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="826304752603022" type="System">
+                    <param id="0" name="Layout">Layout 2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="270803056058520">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="898948939036777" type="mosca">
+                    <param id="0" name="Object">balinha</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="382355621728133" type="mosca" />
+            </actions>
+        </event-block>
+        <event-block sid="657039770025976">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="926549600083909" type="Haroldo">
+                    <param id="0" name="Object">mosca</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="420000573798081" type="Haroldo" />
+            </actions>
+        </event-block>
+        <event-block sid="191628323523386">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="771315656681009" type="BubleGun">
+                    <param id="0" name="Object">mosca</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="615547285202882" type="BubleGun" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
